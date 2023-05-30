@@ -1,4 +1,3 @@
-//snippet - imr
 import React from 'react';
 import logo from './assets/logo.png';
 import lk from './assets/lk.png';
@@ -6,15 +5,13 @@ import ig from './assets/ig.png';
 import tw from './assets/tw.png';
 import fb from './assets/fb.png';
 
-//snippet - sfc
-//Creo el componente Header, aún no está utilizado
 const Header = () => {
     //En este return solo UNA etiqueta que englobe todo lo demás,
     // en este por ej es el div
     return (
         <div>
             <nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-                <a className="navbar-brand" href=".\index.html">
+                <a className="navbar-brand" href="https://matiashmuller.github.io/parcial-react/">
                     <img src={logo} alt="Logo" title="Virbela's MOTY" style={{width: 40}}/>
                 </a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
