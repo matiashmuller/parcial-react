@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/parcial-react/static/css/main.59bf7246.css",
+    "main.js": "/parcial-react/static/js/main.476ab31f.js",
+    "static/js/787.15a7f5cb.chunk.js": "/parcial-react/static/js/787.15a7f5cb.chunk.js",
+    "static/media/1.jpg": "/parcial-react/static/media/1.1e4793c5122760580cfe.jpg",
+    "static/media/2.jpg": "/parcial-react/static/media/2.b096cb34658319ab862c.jpg",
+    "static/media/4.jpg": "/parcial-react/static/media/4.1aa76a278b9d564beb2a.jpg",
+    "static/media/3.jpg": "/parcial-react/static/media/3.14e0d130ed1e35504eb5.jpg",
+    "static/media/ig.png": "/parcial-react/static/media/ig.3fd6fbd38c53fa0428c9.png",
+    "static/media/tw.png": "/parcial-react/static/media/tw.9c34da80d36911ef5858.png",
+    "static/media/fb.png": "/parcial-react/static/media/fb.b148df0be21c89252a79.png",
+    "index.html": "/parcial-react/index.html",
+    "main.59bf7246.css.map": "/parcial-react/static/css/main.59bf7246.css.map",
+    "main.476ab31f.js.map": "/parcial-react/static/js/main.476ab31f.js.map",
+    "787.15a7f5cb.chunk.js.map": "/parcial-react/static/js/787.15a7f5cb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.59bf7246.css",
+    "static/js/main.476ab31f.js"
+  ]
+}
