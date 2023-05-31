@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import logo from './assets/logo.png';
-import lk from './assets/lk.png';
-import ig from './assets/ig.png';
-import tw from './assets/tw.png';
-import fb from './assets/fb.png';
+import logo from '../assets/logo.png';
+import lk from '../assets/lk.png';
+import ig from '../assets/ig.png';
+import tw from '../assets/tw.png';
+import fb from '../assets/fb.png';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import '../App.css';
 
 const Register = () => {
 
-    const [theme, setTheme] = useState(false);
+    const [theme, setTheme] = useState(true);
 
     const changeTheme = () => {
         setTheme(!theme)

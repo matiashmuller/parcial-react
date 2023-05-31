@@ -1,19 +1,19 @@
 import React, { useEffect, useState } from 'react';
-import logo from './assets/logo.png';
-import lk from './assets/lk.png';
-import ig from './assets/ig.png';
-import tw from './assets/tw.png';
-import fb from './assets/fb.png';
-import uno from './assets/1.jpg';
-import dos from './assets/2.jpg';
-import tres from './assets/3.jpg';
-import cuatro from './assets/4.jpg';
+import logo from '../assets/logo.png';
+import lk from '../assets/lk.png';
+import ig from '../assets/ig.png';
+import tw from '../assets/tw.png';
+import fb from '../assets/fb.png';
+import uno from '../assets/1.jpg';
+import dos from '../assets/2.jpg';
+import tres from '../assets/3.jpg';
+import cuatro from '../assets/4.jpg';
 import { HashLink } from 'react-router-hash-link';
 import '../App.css';
 
 const Home = () => {
 
-    const [theme, setTheme] = useState(false);
+    const [theme, setTheme] = useState(true);
 
     const changeTheme = () => {
         setTheme(!theme)

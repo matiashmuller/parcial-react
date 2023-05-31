@@ -1,9 +1,9 @@
 import React from 'react';
-import logo from './assets/logo.png';
-import lk from './assets/lk.png';
-import ig from './assets/ig.png';
-import tw from './assets/tw.png';
-import fb from './assets/fb.png';
+import logo from '../assets/logo.png';
+import lk from '../assets/lk.png';
+import ig from '../assets/ig.png';
+import tw from '../assets/tw.png';
+import fb from '../assets/fb.png';
 import { HashLink } from 'react-router-hash-link';
 
 const Footer = () => {
