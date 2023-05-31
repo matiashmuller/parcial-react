@@ -12,7 +12,7 @@ const Register = () => {
         <div>
             <header>
                 <nav className="navbar navbar-expand-md navbar-dark bg-dark">
-                    <Link className="navbar-brand" to="/">
+                    <Link className="navbar-brand" to="/parcial-react">
                         <img src={logo} alt="Logo" title="Virbela's MOTY" style={{ width: 40 }} />
                     </Link>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
@@ -24,28 +24,28 @@ const Register = () => {
                         <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                             <li className="nav-item">
                                 <button className="btn btn-outline-info my-2 my-sm-3 mr-3" type="submit">
-                                    <HashLink to="/#details">Event details</HashLink>
+                                    <HashLink to="/parcial-react#details">Event details</HashLink>
                                 </button>
                             </li>
                         </ul>
                         <form className="form-inline my-2 my-lg-0 mr-md-3">
-                            <a className="" href="https://www.linkedin.com/company/virbela/" target="_blank">
+                            <a className="" href="https://www.linkedin.com/company/virbela/" target="_blank"  rel="noreferrer">
                                 <img src={lk} alt="Follow us on Linkedin" width="20" title="Follow us on Linkedin" />
                             </a>
                         </form>
                         <form className="form-inline my-2 my-lg-0 mr-md-3">
-                            <a href="https://www.instagram.com/virbelahq/" target="_blank">
+                            <a href="https://www.instagram.com/virbelahq/" target="_blank"  rel="noreferrer">
                                 <img src={ig} alt="Follow us on Instagram" width="20"
                                     title="Follow us on Instagram" />
                             </a>
                         </form>
                         <form className="form-inline my-2 my-lg-0 mr-md-3">
-                            <a href="https://twitter.com/VirbelaHQ" target="_blank">
+                            <a href="https://twitter.com/VirbelaHQ" target="_blank"  rel="noreferrer">
                                 <img src={tw} alt="Follow us on Twitter" width="20" title="Follow us on Twitter" />
                             </a>
                         </form>
                         <form className="form-inline my-2 my-lg-0 mr-md-3">
-                            <a href="https://www.facebook.com/Virbela/" target="_blank">
+                            <a href="https://www.facebook.com/Virbela/" target="_blank"  rel="noreferrer">
                                 <img src={fb} alt="Follow us on Facebook" width="20" title="Follow us on Facebook" />
                             </a>
                         </form>

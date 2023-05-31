@@ -16,7 +16,7 @@ const Home = () => {
         <div>
             <header>
                 <nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-                    <HashLink className="navbar-brand" to={"/#titulo"}>
+                    <HashLink className="navbar-brand" to={"/parcial-react#titulo"}>
                         <img src={logo} alt="Logo" title="Virbela's MOTY" style={{ width: 40 }} />
                     </HashLink>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
@@ -28,33 +28,33 @@ const Home = () => {
                         <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                             <li className="nav-item">
                                 <button className="btn btn-outline-info my-2 my-sm-3 mr-3" type="submit">
-                                    <HashLink to="/#details">Event details</HashLink>
+                                    <HashLink to="/parcial-react#details">Event details</HashLink>
                                 </button>
                             </li>
                             <li className="nav-item">
                                 <button className="btn btn-outline-danger my-2 my-sm-3" type="submit">
-                                    <Link to="/register">REGISTER NOW</Link>
+                                    <Link to="/parcial-react/register">REGISTER NOW</Link>
                                 </button>
                             </li>
                         </ul>
                         <form className="form-inline my-2 my-lg-0 mr-md-3">
-                            <a className="" href="https://www.linkedin.com/company/virbela/" target="_blank">
+                            <a className="" href="https://www.linkedin.com/company/virbela/" target="_blank" rel="noreferrer">
                                 <img src={lk} alt="Follow us on Linkedin" width="20" title="Follow us on Linkedin" />
                             </a>
                         </form>
                         <form className="form-inline my-2 my-lg-0 mr-md-3">
-                            <a href="https://www.instagram.com/virbelahq/" target="_blank">
+                            <a href="https://www.instagram.com/virbelahq/" target="_blank" rel="noreferrer">
                                 <img src={ig} alt="Follow us on Instagram" width="20"
                                     title="Follow us on Instagram" />
                             </a>
                         </form>
                         <form className="form-inline my-2 my-lg-0 mr-md-3">
-                            <a href="https://twitter.com/VirbelaHQ" target="_blank">
+                            <a href="https://twitter.com/VirbelaHQ" target="_blank" rel="noreferrer">
                                 <img src={tw} alt="Follow us on Twitter" width="20" title="Follow us on Twitter" />
                             </a>
                         </form>
                         <form className="form-inline my-2 my-lg-0 mr-md-3">
-                            <a href="https://www.facebook.com/Virbela/" target="_blank">
+                            <a href="https://www.facebook.com/Virbela/" target="_blank" rel="noreferrer">
                                 <img src={fb} alt="Follow us on Facebook" width="20" title="Follow us on Facebook" />
                             </a>
                         </form>
@@ -119,7 +119,7 @@ const Home = () => {
                     </article>
                     <div className="m-5 text-center">
                         <button className="btn btn-danger btn-lg my-2 my-sm-3" type="submit">
-                            <Link to="/register">REGISTER NOW</Link>
+                            <Link to="/parcial-react/register">REGISTER NOW</Link>
                         </button>
                     </div>
                 </section>

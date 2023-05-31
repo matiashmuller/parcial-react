@@ -11,20 +11,20 @@ const Footer = () => {
         <div className="bg-dark text-light text-center d-lg-flex">
             <div className="pt-5 col-lg-4">
                 <div className="mb-5 mt-lg-2">
-                    <a className="mr-3" href="https://www.linkedin.com/company/virbela/" target="_blank">
+                    <a className="mr-3" href="https://www.linkedin.com/company/virbela/" target="_blank" rel="noreferrer">
                         <img src={lk} alt="Follow us on Linkedin" width="30" title="Follow us on Linkedin"/>
                     </a>
-                    <a className="mr-3" href="https://www.instagram.com/virbelahq/" target="_blank">
+                    <a className="mr-3" href="https://www.instagram.com/virbelahq/" target="_blank" rel="noreferrer">
                         <img src={ig} alt="Follow us on Instagram" width="30" title="Follow us on Instagram"/>
                     </a>
-                    <a className="mr-3" href="https://twitter.com/VirbelaHQ" target="_blank">
+                    <a className="mr-3" href="https://twitter.com/VirbelaHQ" target="_blank" rel="noreferrer">
                         <img src={tw} alt="Follow us on Twitter" width="30" title="Follow us on Twitter"/>
                     </a>
-                    <a href="https://www.facebook.com/Virbela/" target="_blank">
+                    <a href="https://www.facebook.com/Virbela/" target="_blank" rel="noreferrer">
                         <img src={fb} alt="Follow us on Facebook" width="30" title="Follow us on Facebook"/>
                     </a>
                 </div>
-                <HashLink to={"/#titulo"}>
+                <HashLink to={"/parcial-react#titulo"}>
                     <img src={logo} alt="Home" width="70" title="Home"/>
                 </HashLink>
             </div>
