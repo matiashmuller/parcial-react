@@ -4,6 +4,7 @@ import lk from './assets/lk.png';
 import ig from './assets/ig.png';
 import tw from './assets/tw.png';
 import fb from './assets/fb.png';
+import { HashLink } from 'react-router-hash-link';
 
 const Footer = () => {
     return (
@@ -23,9 +24,9 @@ const Footer = () => {
                         <img src={fb} alt="Follow us on Facebook" width="30" title="Follow us on Facebook"/>
                     </a>
                 </div>
-                <a href=".\index.html">
-                    <img src={logo} alt="Home" width="70" title="Go up"/>
-                </a>
+                <HashLink to={"/#titulo"}>
+                    <img src={logo} alt="Home" width="70" title="Home"/>
+                </HashLink>
             </div>
             <div className="p-5 col-lg-4">
                 <h2>Contact us</h2>
