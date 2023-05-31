@@ -9,8 +9,8 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/register" element={<Register />} />
+        <Route path="/parcial-react" element={<Home />} />
+        <Route path="/parcial-react/register" element={<Register />} />
       </Routes>
       <Footer />
     </>
