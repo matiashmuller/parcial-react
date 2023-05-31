@@ -9,7 +9,7 @@ import { HashLink } from 'react-router-hash-link';
 
 const Register = () => {
     return (
-        <div>
+        <div id="registration">
             <header>
                 <nav className="navbar navbar-expand-md navbar-dark bg-dark">
                     <Link className="navbar-brand" to="/parcial-react">
@@ -82,10 +82,8 @@ const Register = () => {
                             <label className="form-check-label" for="checkbox">I agree to terms of service</label>
                         </div>
                         <div className="mt-4">
-                            {/* 
-                            <button id="btnRegister" type="submit" value={{Send}} className="btn btn-outline-danger btn-lg mb-1 mb-sm-0">Register</button>
-                            <button id="btnReset" type="reset" value={{Reset}} className="btn btn-outline-info btn-lg ">Reset</button>
-                            */}
+                            <button id="btnRegister" type="submit"  className="btn btn-outline-danger btn-lg m-1">Register</button>
+                            <button id="btnReset" type="reset"  className="btn btn-outline-info btn-lg m-1">Reset</button>
                         </div>
                     </form>
                 </section>

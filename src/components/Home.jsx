@@ -8,7 +8,6 @@ import uno from './assets/1.jpg';
 import dos from './assets/2.jpg';
 import tres from './assets/3.jpg';
 import cuatro from './assets/4.jpg';
-import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
 const Home = () => {
@@ -33,7 +32,7 @@ const Home = () => {
                             </li>
                             <li className="nav-item">
                                 <button className="btn btn-outline-danger my-2 my-sm-3" type="submit">
-                                    <Link to="/parcial-react/register">REGISTER NOW</Link>
+                                    <HashLink to="/parcial-react/register#registration">REGISTER NOW</HashLink>
                                 </button>
                             </li>
                         </ul>
@@ -119,7 +118,7 @@ const Home = () => {
                     </article>
                     <div className="m-5 text-center">
                         <button className="btn btn-danger btn-lg my-2 my-sm-3" type="submit">
-                            <Link to="/parcial-react/register">REGISTER NOW</Link>
+                            <HashLink to="/parcial-react/register#registration">REGISTER NOW</HashLink>
                         </button>
                     </div>
                 </section>
