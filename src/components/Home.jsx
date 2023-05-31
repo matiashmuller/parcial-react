@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from './assets/logo.png';
 import lk from './assets/lk.png';
 import ig from './assets/ig.png';
@@ -9,8 +9,34 @@ import dos from './assets/2.jpg';
 import tres from './assets/3.jpg';
 import cuatro from './assets/4.jpg';
 import { HashLink } from 'react-router-hash-link';
+import '../App.css';
 
 const Home = () => {
+
+    const [theme, setTheme] = useState(false);
+
+    const changeTheme = () => {
+        setTheme(!theme)
+    }
+
+    useEffect(() => {
+        const button = document.getElementById("darkMode");
+        const body = document.body;
+        const titulo = document.getElementById("titulo");
+        const topic = document.getElementById("topicArt")
+        const details = document.getElementById("detailsArt")
+
+        body.classList.toggle("bg-light-custom");
+        titulo.classList.toggle("bg-gradient-light");
+        topic.classList.toggle("bg-gradient-light");
+        details.classList.toggle("bg-gradient-light");
+        if (theme) {
+            button.innerHTML = "Dark"
+        } else {
+            button.innerHTML = "Light"
+        };
+    })
+
     return (
         <div>
             <header>
@@ -57,7 +83,7 @@ const Home = () => {
                                 <img src={fb} alt="Follow us on Facebook" width="20" title="Follow us on Facebook" />
                             </a>
                         </form>
-                        <button id="darkMode" className="btn btn-outline-light btn-sm my-2 my-lg-0">Light</button>
+                        <button id="darkMode" onClick={changeTheme} className="btn btn-outline-light btn-sm my-2 my-lg-0">Light</button>
                     </div>
                 </nav>
             </header>

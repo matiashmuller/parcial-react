@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from './assets/logo.png';
 import lk from './assets/lk.png';
 import ig from './assets/ig.png';
@@ -6,8 +6,37 @@ import tw from './assets/tw.png';
 import fb from './assets/fb.png';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import '../App.css';
 
 const Register = () => {
+
+    const [theme, setTheme] = useState(false);
+
+    const changeTheme = () => {
+        setTheme(!theme)
+    }
+
+    useEffect(() => {
+        const button = document.getElementById("darkMode");
+        const register = document.getElementById("register");
+        const form = document.getElementById("form");
+        const btnRegister = document.getElementById("btnRegister");
+        const btnReset = document.getElementById("btnReset");
+
+        register.classList.toggle("bg-gradient-light");
+        form.classList.toggle("bg-light-custom");
+        form.classList.toggle("text-dark");
+        btnRegister.classList.toggle("btn-outline-danger")
+        btnReset.classList.toggle("btn-outline-info")
+        btnRegister.classList.toggle("btn-danger")
+        btnReset.classList.toggle("btn-info")
+        if (theme) {
+            button.innerHTML = "Dark"
+        } else {
+            button.innerHTML = "Light"
+        };
+    })
+
     return (
         <div id="registration">
             <header>
@@ -29,27 +58,27 @@ const Register = () => {
                             </li>
                         </ul>
                         <form className="form-inline my-2 my-lg-0 mr-md-3">
-                            <a className="" href="https://www.linkedin.com/company/virbela/" target="_blank"  rel="noreferrer">
+                            <a className="" href="https://www.linkedin.com/company/virbela/" target="_blank" rel="noreferrer">
                                 <img src={lk} alt="Follow us on Linkedin" width="20" title="Follow us on Linkedin" />
                             </a>
                         </form>
                         <form className="form-inline my-2 my-lg-0 mr-md-3">
-                            <a href="https://www.instagram.com/virbelahq/" target="_blank"  rel="noreferrer">
+                            <a href="https://www.instagram.com/virbelahq/" target="_blank" rel="noreferrer">
                                 <img src={ig} alt="Follow us on Instagram" width="20"
                                     title="Follow us on Instagram" />
                             </a>
                         </form>
                         <form className="form-inline my-2 my-lg-0 mr-md-3">
-                            <a href="https://twitter.com/VirbelaHQ" target="_blank"  rel="noreferrer">
+                            <a href="https://twitter.com/VirbelaHQ" target="_blank" rel="noreferrer">
                                 <img src={tw} alt="Follow us on Twitter" width="20" title="Follow us on Twitter" />
                             </a>
                         </form>
                         <form className="form-inline my-2 my-lg-0 mr-md-3">
-                            <a href="https://www.facebook.com/Virbela/" target="_blank"  rel="noreferrer">
+                            <a href="https://www.facebook.com/Virbela/" target="_blank" rel="noreferrer">
                                 <img src={fb} alt="Follow us on Facebook" width="20" title="Follow us on Facebook" />
                             </a>
                         </form>
-                        <button id="darkMode" className="btn btn-outline-light btn-sm my-2 my-lg-0">Light</button>
+                        <button id="darkMode" onClick={changeTheme} className="btn btn-outline-light btn-sm my-2 my-lg-0">Light</button>
                     </div>
                 </nav>
             </header>
@@ -82,8 +111,8 @@ const Register = () => {
                             <label className="form-check-label" for="checkbox">I agree to terms of service</label>
                         </div>
                         <div className="mt-4">
-                            <button id="btnRegister" type="submit"  className="btn btn-outline-danger btn-lg m-1">Register</button>
-                            <button id="btnReset" type="reset"  className="btn btn-outline-info btn-lg m-1">Reset</button>
+                            <button id="btnRegister" type="submit" className="btn btn-outline-danger btn-lg m-1">Register</button>
+                            <button id="btnReset" type="reset" className="btn btn-outline-info btn-lg m-1">Reset</button>
                         </div>
                     </form>
                 </section>

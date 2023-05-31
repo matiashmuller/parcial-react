@@ -3,9 +3,9 @@ import Footer from './components/Footer';
 import Home from './components/Home'
 import Register from './components/Register'
 import { Routes, Route } from 'react-router-dom';
+import React from 'react';
 
 function App() {
-
   return (
     <>
       <Routes>
