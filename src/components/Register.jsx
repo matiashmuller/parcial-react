@@ -10,10 +10,10 @@ import '../App.css';
 
 const Register = () => {
 
-    const [theme, setTheme] = useState(true);
+    const [oscuro, setTheme] = useState(false);
 
     const changeTheme = () => {
-        setTheme(!theme)
+        setTheme(!oscuro)
     }
 
     useEffect(() => {
@@ -23,16 +23,23 @@ const Register = () => {
         const btnRegister = document.getElementById("btnRegister");
         const btnReset = document.getElementById("btnReset");
 
-        register.classList.toggle("bg-gradient-light");
-        form.classList.toggle("bg-light-custom");
-        form.classList.toggle("text-dark");
-        btnRegister.classList.toggle("btn-outline-danger")
-        btnReset.classList.toggle("btn-outline-info")
-        btnRegister.classList.toggle("btn-danger")
-        btnReset.classList.toggle("btn-info")
-        if (theme) {
+        if (oscuro) {
+            register.classList.add("bg-gradient-light");
+            form.classList.add("bg-light-custom");
+            form.classList.add("text-dark");
+            btnRegister.classList.remove("btn-outline-danger")
+            btnReset.classList.remove("btn-outline-info")
+            btnRegister.classList.add("btn-danger")
+            btnReset.classList.add("btn-info")
             button.innerHTML = "Dark"
         } else {
+            register.classList.remove("bg-gradient-light");
+            form.classList.remove("bg-light-custom");
+            form.classList.remove("text-dark");
+            btnRegister.classList.add("btn-outline-danger")
+            btnReset.classList.add("btn-outline-info")
+            btnRegister.classList.remove("btn-danger")
+            btnReset.classList.remove("btn-info")
             button.innerHTML = "Light"
         };
     })

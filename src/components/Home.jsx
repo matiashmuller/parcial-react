@@ -13,10 +13,10 @@ import '../App.css';
 
 const Home = () => {
 
-    const [theme, setTheme] = useState(true);
+    const [oscuro, setTheme] = useState(false);
 
     const changeTheme = () => {
-        setTheme(!theme)
+        setTheme(!oscuro)
     }
 
     useEffect(() => {
@@ -26,13 +26,17 @@ const Home = () => {
         const topic = document.getElementById("topicArt")
         const details = document.getElementById("detailsArt")
 
-        body.classList.toggle("bg-light-custom");
-        titulo.classList.toggle("bg-gradient-light");
-        topic.classList.toggle("bg-gradient-light");
-        details.classList.toggle("bg-gradient-light");
-        if (theme) {
+        if (oscuro) {
+            body.classList.add("bg-light-custom");
+            titulo.classList.add("bg-gradient-light");
+            topic.classList.add("bg-gradient-light");
+            details.classList.add("bg-gradient-light");
             button.innerHTML = "Dark"
         } else {
+            body.classList.remove("bg-light-custom");
+            titulo.classList.remove("bg-gradient-light");
+            topic.classList.remove("bg-gradient-light");
+            details.classList.remove("bg-gradient-light");
             button.innerHTML = "Light"
         };
     })
